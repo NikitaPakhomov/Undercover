@@ -16,16 +16,17 @@ h2 {
 .header-wrapper {
     margin: 0 auto;
     margin-top: 78px;
-    width: 100%;
-    min-height: 800px;
+    width: 80%;
+    min-height: 680px;
     max-width: 1455px;
-    background: url("img/header__lamp.png") no-repeat center center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background: url("img/header__lamp.png") no-repeat center 70%;
+    background-size: 70%;
 }
+
 .title {
     &:hover {
         .header__span {
