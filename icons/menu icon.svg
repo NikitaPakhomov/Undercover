@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82" height="82" viewBox="0 0 82 82">
+  <g id="menu_icon" data-name="menu icon" transform="translate(-1638 -263)">
+    <g id="btn_frame" data-name="btn frame" transform="translate(1638 263)" fill="none" stroke="#454545" stroke-width="1">
+      <rect width="82" height="82" stroke="none"/>
+      <rect x="0.5" y="0.5" width="81" height="81" fill="none"/>
+    </g>
+    <image id="list" width="52" height="38" transform="translate(1653 285)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAmCAYAAACLZrh7AAAABHNCSVQICAgIfAhkiAAAAK5JREFUWEftmVENgDAMRDsHWEEABjCAASSeACQgAQkkCBiZhCbXZmmO/13X9+5noQG4rM53NgC9zj62joWWQgt9rfdKgsy00Oz1lCEZSiagyiUDd4+TITey5AMylAzcPU6G3MiSD9QzVPGBdye3InLcUa9yerFGFoaQrcoRIIZGyFAoXkK4DBEghkbIUCheQrgMESCGRshQKF5CeD1DAF4CmFkitvFL8pnlNoR77D8AS3OTWdYm/wAAAABJRU5ErkJggg=="/>
+  </g>
+</svg>
