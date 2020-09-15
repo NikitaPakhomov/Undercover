@@ -40,8 +40,8 @@ h2 {
 }
 
 .title:hover .header__span {
-  -webkit-animation: pistol 0.8s 1;
-          animation: pistol 0.8s 1;
+  -webkit-animation: pistol 0.75s 1;
+          animation: pistol 0.75s 1;
   -webkit-animation-timing-function: easy-in;
           animation-timing-function: easy-in;
 }
@@ -71,8 +71,8 @@ h2 {
             transform: translate(0);
   }
   50% {
-    -webkit-transform: translate(50px);
-            transform: translate(50px);
+    -webkit-transform: translate(70px);
+            transform: translate(70px);
   }
   75% {
   }
@@ -88,8 +88,8 @@ h2 {
             transform: translate(0);
   }
   50% {
-    -webkit-transform: translate(50px);
-            transform: translate(50px);
+    -webkit-transform: translate(70px);
+            transform: translate(70px);
   }
   75% {
   }
