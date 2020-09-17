@@ -12,6 +12,11 @@ h3 {
   padding: 0;
 }
 
+h2 {
+  font-size: 3.7rem;
+  color: #b4b4b4;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -73,7 +78,6 @@ a {
 
 .header__h2 {
   color: #636363;
-  font-size: 3.7rem;
   margin-top: 30%;
 }
 
@@ -185,9 +189,11 @@ a {
 .service-wrapper {
   margin: 0 auto;
   width: 90%;
+  width: 80%;
 }
 
 .service-wrapper .service__div {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,11 +212,11 @@ a {
 
 .service__h2 {
   color: #b4b4b4;
-  font-size: 3.75rem;
+  margin-bottom: 40px;
 }
 
 .service-left {
-  min-width: 30%;
+  min-width: 40%;
 }
 
 .service__h3 {
@@ -228,7 +234,7 @@ a {
 
 .service__li {
   color: #b4b4b4;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .service-right {
@@ -249,5 +255,87 @@ a {
   background: url("img/service.png") no-repeat 20% center;
   background-size: contain;
   margin: 0 auto;
+}
+
+.portfolio-container {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.portfolio-wrapper {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 880px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.portfolio__h2 {
+  color: #b4b4b4;
+}
+
+.portfolio__items {
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  min-height: 570px;
+}
+
+.portfolio__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 2%;
+  background-color: #b69b67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+}
+
+.portfolio__img-cont {
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.portfolio__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.portfolio__img3 {
+  -o-object-position: -100px;
+     object-position: -100px;
+}
+
+.portfolio__info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

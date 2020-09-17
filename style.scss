@@ -11,6 +11,10 @@ h3 {
     margin: 0;
     padding: 0;
 }
+h2 {
+    font-size: 3.7rem;
+    color: #b4b4b4;
+}
 a {
     text-decoration: none;
     color: white;
@@ -67,7 +71,6 @@ a {
 }
 .header__h2 {
     color: #636363;
-    font-size: 3.7rem;
     margin-top: 30%;
 }
 .header__scroll {
@@ -126,7 +129,9 @@ a {
 }
 .service-wrapper {
     @include wrapper();
+    width: 80%;
     .service__div {
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -137,10 +142,10 @@ a {
 }
 .service__h2 {
     color: #b4b4b4;
-    font-size: 3.75rem;
+    margin-bottom: 40px;
 }
 .service-left {
-    min-width: 30%;
+    min-width: 40%;
 }
 .service__h3 {
     color: #b69b67;
@@ -155,7 +160,7 @@ a {
 }
 .service__li {
     color: #b4b4b4;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 .service-right {
     margin-top: 30px;
@@ -173,4 +178,64 @@ a {
     background: url("img/service.png") no-repeat 20% center;
     background-size: contain;
     margin: 0 auto;
+}
+
+//---------------------PORTFOLIO-------------
+.portfolio {
+}
+.portfolio-container {
+    @include container();
+}
+.portfolio-wrapper {
+    @include wrapper();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 880px;
+    justify-content: space-evenly;
+}
+.portfolio__h2 {
+    color: #b4b4b4;
+}
+.portfolio__select {
+}
+.portfolio__option {
+}
+.portfolio__items {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 570px;
+}
+.portfolio__item {
+    box-sizing: border-box;
+    margin: 2%;
+    background-color: #b69b67;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+.portfolio__img-cont {
+    max-width: 50%;
+    //min-height: 100%;
+    overflow: hidden;
+}
+.portfolio__img {
+    object-fit: cover;
+    object-position: left;
+}
+.portfolio__img3 {
+    object-position: -100px;
+}
+.portfolio__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.portfolio__title {
+}
+.portfolio__text {
+}
+.portfolio__category {
 }
