@@ -42,8 +42,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("img/header__lamp.png") no-repeat center center, url("img/light.png") no-repeat center center;
-  background-size: 70%;
+  background: url("img/header__lamp.png") no-repeat center 35%, url("img/light.png") no-repeat center 35%;
+  background-size: 25%, 50%;
 }
 
 .title {
@@ -65,8 +65,8 @@ a {
 
 .header__span {
   position: absolute;
-  bottom: -3.75rem;
-  right: -6rem;
+  bottom: -100%;
+  right: -25%;
   color: #b4b4b4;
   font-size: 1.875rem;
 }
@@ -195,9 +195,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .service__div {
@@ -217,10 +217,13 @@ a {
   color: #b69b67;
   font-size: 3.75rem;
   text-align: start;
+  margin-bottom: 30px;
 }
 
 .service__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service__li {
@@ -229,18 +232,22 @@ a {
 }
 
 .service-right {
-  margin-top: 60px;
-  min-width: 60%;
+  margin-top: 30px;
+  min-width: 40%;
 }
 
 .service__text {
+  text-align: left;
   max-width: 300px;
   color: #b4b4b4;
+  font-size: 1.25rem;
 }
 
 .service__comp {
-  min-height: 200px;
-  background: url("img/service.png") no-repeat 70% center;
+  min-width: 100%;
+  min-height: 50%;
+  background: url("img/service.png") no-repeat 20% center;
   background-size: contain;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
