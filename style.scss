@@ -261,3 +261,67 @@ a {
 .deactive {
     display: none;
 }
+//--------feeadback+contact---------
+.feedbackAndContactUs {
+}
+.feedbackAndContactUs-container {
+    @include container();
+}
+.feedbackAndContactUs-wrapper {
+    @include wrapper();
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 915px;
+}
+.feedback {
+    flex-basis: 50%;
+}
+
+.feedback__h2 {
+}
+.feedback__people {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 880px;
+}
+.feedback__person {
+    display: flex;
+    flex-direction: row;
+}
+.feedback__img {
+    align-self: center;
+    flex-basis: 20% img {
+        object-fit: cover;
+        object-position: center;
+    }
+}
+.feedback__info {
+    flex-basis: 80%;
+}
+.feedback__text {
+    color: #b4b4b4;
+    font-size: 1.875rem;
+}
+.feedback__name {
+    color: #b69b67;
+    font-size: 1.875rem;
+}
+.contactUs {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactUs__h2 {
+}
+.contactUs__form {
+}
+.name {
+}
+.email {
+}
+.message {
+}
+.submit {
+}
