@@ -106,7 +106,7 @@ a {
             animation: btnDown 0.7s linear alternate infinite;
         }
     }
-    @media handheld {
+    @media handheld and (max-width: 350px) {
         transform: scale(1.1);
         .header__down {
             animation: btnDown 0.7s linear alternate infinite;

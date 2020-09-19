@@ -133,7 +133,7 @@ a {
           animation: btnDown 0.7s linear alternate infinite;
 }
 
-@media handheld {
+@media handheld and (max-width: 350px) {
   .header__scroll {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);

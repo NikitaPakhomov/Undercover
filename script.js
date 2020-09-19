@@ -3,9 +3,11 @@ let sound = new Audio();
 sound.src = 'music/hover__music.mp3';
 const title = document.querySelector('.header__h1');
 
-title.addEventListener('mouseover', function () {
-    sound.play();
-});
+if (sound.onload) {
+    title.addEventListener('mouseover', function () {
+        sound.play();
+    });
+}
 
 //-----------portfolio-------
 let category = document.querySelector('.portfolio__select');
