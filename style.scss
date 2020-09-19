@@ -1,8 +1,14 @@
 //--------------ALL------------
+html {
+    @media screen and (max-width: 520px) {
+        font-size: 8px;
+    }
+}
 body {
     background: #303030;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 h1,
 h2,
@@ -22,18 +28,26 @@ a {
 @mixin container {
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
 }
+
 @mixin wrapper {
     margin: 0 auto;
     width: 90%;
 }
 //-----------------HEADER-------
 .header-container {
+    @include container();
     width: 100%;
     max-width: 1920px;
     min-height: 970px;
+    @media screen and (max-width: 520px) {
+        min-height: 400px;
+        margin-bottom: 40px;
+    }
 }
 .header-wrapper {
+    @include wrapper();
     margin: 0 auto;
     margin-top: 78px;
     width: 80%;
@@ -45,6 +59,10 @@ a {
     justify-content: space-between;
     background: url("img/header__lamp.png") no-repeat center 35%, url("img/light.png") no-repeat center 35%;
     background-size: 25%, 50%;
+    @media screen and (max-width: 520px) {
+        min-height: 400px;
+        margin-top: 0;
+    }
 }
 
 .title {
@@ -68,6 +86,9 @@ a {
     right: -25%;
     color: #b4b4b4;
     font-size: 1.875rem;
+    @media screen and (max-width: 350px) {
+        right: 10%;
+    }
 }
 .header__h2 {
     color: #636363;
@@ -152,6 +173,9 @@ a {
     font-size: 3.75rem;
     text-align: start;
     margin-bottom: 30px;
+    @media screen and (max-width: 520px) {
+        font-size: 2rem;
+    }
 }
 .service__list {
     list-style: none;
@@ -185,6 +209,10 @@ a {
 }
 .portfolio-container {
     @include container();
+    @media screen and (max-width: 520px) {
+        min-height: 800px;
+        margin-top: 40px;
+    }
 }
 .portfolio-wrapper {
     @include wrapper();
@@ -193,6 +221,9 @@ a {
     align-items: center;
     min-height: 880px;
     justify-content: space-evenly;
+    @media screen and (max-width: 520px) {
+        min-height: 800px;
+    }
 }
 .portfolio__h2 {
     color: #b4b4b4;
@@ -205,7 +236,11 @@ a {
     padding: 6px 25px 13px 0;
     appearance: none;
     background: url("img/portfolio_down.png") no-repeat 185px;
-    background-size: 20px;
+
+    @media screen and (max-width: 520px) {
+        background: url("img/portfolio_down.png") no-repeat 95px center;
+        background-size: 10px;
+    }
 }
 .portfolio__option {
 }
@@ -213,9 +248,14 @@ a {
     max-width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 48% 48%;
 
     min-height: 570px;
+    @media screen and (max-width: 520px) {
+        min-height: 300px;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
 }
 .portfolio__item {
     box-sizing: border-box;
@@ -224,7 +264,6 @@ a {
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    max-height: 90%; //???????????
 }
 .portfolio__img-cont {
     max-width: 50%;
@@ -266,6 +305,11 @@ a {
 }
 .feedbackAndContactUs-container {
     @include container();
+    margin-bottom: 10%;
+    @media screen and (max-width: 520px) {
+        min-height: 700px;
+        margin-top: 40px;
+    }
 }
 .feedbackAndContactUs-wrapper {
     @include wrapper();
@@ -273,6 +317,13 @@ a {
     flex-direction: row;
     justify-content: space-between;
     min-height: 915px;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 520px) {
+        min-height: 700px;
+    }
 }
 .feedback {
     flex-basis: 45%;
@@ -285,6 +336,9 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     min-height: 880px;
+    @media screen and (max-width: 520px) {
+        min-height: 400px;
+    }
 }
 .feedback__person {
     display: flex;
@@ -313,10 +367,21 @@ a {
     border-top: 1px solid #b69b67;
     padding: 3%;
 }
+.feedback__aCont {
+    text-align: center;
+}
+//-------------------------CONTACT-US---------------------------
+
 .contactUs {
     flex-basis: 45%;
     display: flex;
     flex-direction: column;
+    background: url("img/people/write.png") no-repeat right bottom;
+    background-size: 45%;
+    @media screen and (max-width: 1250px) {
+        margin-top: 25px;
+        align-items: center;
+    }
 }
 .contactUs__h2 {
 }
@@ -326,6 +391,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 1250px) {
+        min-height: 300px;
+    }
+    @media screen and (max-width: 520px) {
+        min-height: 150px;
+    }
 }
 .name {
     min-height: 10%;
@@ -357,19 +428,87 @@ a {
 
 //---------------CONTACTS--------------------
 .contacts {
+    margin-top: 40px;
 }
 .contacts-container {
+    @include container();
+    min-height: 700px;
+    background: url("img/contact/light1.png") no-repeat center bottom;
+    background-size: 30%;
+    @media screen and (max-width: 520px) {
+        min-height: 500px;
+    }
 }
 .contacts-wrapper {
+    @include wrapper();
+    @media screen and (max-width: 520px) {
+        min-height: 500px;
+    }
 }
 .contacts__info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: #b4b4b4;
+    font-size: 1.875rem;
+    @media screen and (max-width: 1250px) {
+        flex-wrap: wrap;
+    }
 }
-.contact__phone {
+.contact__Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    &:first-child {
+        margin-left: 0;
+    }
+    @media screen and (max-width: 1250px) {
+        margin-bottom: 40px;
+    }
 }
-.contact__email {
+.contact__title {
+    border-top: 1px solid #b69b67;
+    color: #b69b67;
+    line-height: 80px;
 }
-.contact__adress {
+.contact__data {
+    text-align: center;
+}
+//------------------------FOOTER-------------
+.footer {
+}
+.footer__container {
+    @include container();
+    background: url("img/contact/fire.png") no-repeat center bottom;
+    min-height: 700px;
+    @media screen and (max-width: 520px) {
+        min-height: 500px;
+    }
+}
+.footer__wrapper {
+    @include wrapper();
+    @media screen and (max-width: 520px) {
+        min-height: 500px;
+    }
+}
+.footer__title {
+    font-size: 3.75rem;
+    color: #636363;
+    text-align: center;
+}
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    @media screen and (max-width: 1000px) {
+        flex-wrap: wrap;
+    }
+}
+.footer__item {
+    font-size: 0.9375rem;
+    color: #b4b4b4;
+    margin-left: 5px;
 }
