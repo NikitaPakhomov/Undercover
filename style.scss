@@ -271,11 +271,11 @@ a {
     @include wrapper();
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 915px;
 }
 .feedback {
-    flex-basis: 50%;
+    flex-basis: 45%;
 }
 
 .feedback__h2 {
@@ -289,16 +289,18 @@ a {
 .feedback__person {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .feedback__img {
-    align-self: center;
+    margin-top: 5px;
     flex-basis: 20% img {
         object-fit: cover;
         object-position: center;
     }
 }
 .feedback__info {
-    flex-basis: 80%;
+    flex-basis: 75%;
 }
 .feedback__text {
     color: #b4b4b4;
@@ -307,21 +309,67 @@ a {
 .feedback__name {
     color: #b69b67;
     font-size: 1.875rem;
+    margin-top: 10%;
+    border-top: 1px solid #b69b67;
+    padding: 3%;
 }
 .contactUs {
-    flex-basis: 50%;
+    flex-basis: 45%;
     display: flex;
     flex-direction: column;
 }
 .contactUs__h2 {
 }
 .contactUs__form {
+    margin-top: 25px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .name {
+    min-height: 10%;
+    background-color: #303030;
+    border: 1px solid #b4b4b4;
+    font-size: 1.875rem;
+    color: #454545;
 }
 .email {
+    min-height: 10%;
+    background-color: #303030;
+    border: 1px solid #b4b4b4;
+    font-size: 1.875rem;
+    color: #454545;
 }
 .message {
+    min-height: 45%;
+    background-color: #303030;
+    border: 1px solid #b4b4b4;
+    font-size: 2.3rem;
+    color: #454545;
 }
 .submit {
+    min-height: 10%;
+    background-color: #b69b67;
+    font-size: 1.875rem;
+    color: #303030;
+}
+
+//---------------CONTACTS--------------------
+.contacts {
+}
+.contacts-container {
+}
+.contacts-wrapper {
+}
+.contacts__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact__phone {
+}
+.contact__email {
+}
+.contact__adress {
 }
