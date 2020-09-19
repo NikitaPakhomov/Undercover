@@ -210,7 +210,7 @@ a {
 .portfolio-container {
     @include container();
     @media screen and (max-width: 520px) {
-        min-height: 800px;
+        min-height: 0;
         margin-top: 40px;
     }
 }
@@ -222,7 +222,7 @@ a {
     min-height: 880px;
     justify-content: space-evenly;
     @media screen and (max-width: 520px) {
-        min-height: 800px;
+        min-height: 0;
     }
 }
 .portfolio__h2 {
@@ -252,9 +252,9 @@ a {
 
     min-height: 570px;
     @media screen and (max-width: 520px) {
-        min-height: 300px;
         grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-rows: 24%;
+        min-height: 0;
     }
 }
 .portfolio__item {
@@ -264,6 +264,9 @@ a {
     display: flex;
     flex-direction: row;
     max-width: 100%;
+    @media screen and (max-width: 520px) {
+        height: 200px;
+    }
 }
 .portfolio__img-cont {
     max-width: 50%;
@@ -395,7 +398,8 @@ a {
         min-height: 300px;
     }
     @media screen and (max-width: 520px) {
-        min-height: 150px;
+        min-height: 250px;
+        min-width: 180%;
     }
 }
 .name {
@@ -404,6 +408,9 @@ a {
     border: 1px solid #b4b4b4;
     font-size: 1.875rem;
     color: #454545;
+    @media screen and (max-width: 520px) {
+        min-height: 40px;
+    }
 }
 .email {
     min-height: 10%;
@@ -411,6 +418,9 @@ a {
     border: 1px solid #b4b4b4;
     font-size: 1.875rem;
     color: #454545;
+    @media screen and (max-width: 520px) {
+        min-height: 40px;
+    }
 }
 .message {
     min-height: 45%;
@@ -418,12 +428,18 @@ a {
     border: 1px solid #b4b4b4;
     font-size: 2.3rem;
     color: #454545;
+    @media screen and (max-width: 520px) {
+        min-height: 70px;
+    }
 }
 .submit {
     min-height: 10%;
     background-color: #b69b67;
     font-size: 1.875rem;
     color: #303030;
+    @media screen and (max-width: 520px) {
+        min-height: 40px;
+    }
 }
 
 //---------------CONTACTS--------------------

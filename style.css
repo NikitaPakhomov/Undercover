@@ -304,7 +304,7 @@ a {
 
 @media screen and (max-width: 520px) {
   .portfolio-container {
-    min-height: 800px;
+    min-height: 0;
     margin-top: 40px;
   }
 }
@@ -330,7 +330,7 @@ a {
 
 @media screen and (max-width: 520px) {
   .portfolio-wrapper {
-    min-height: 800px;
+    min-height: 0;
   }
 }
 
@@ -370,11 +370,11 @@ a {
 
 @media screen and (max-width: 520px) {
   .portfolio__items {
-    min-height: 300px;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% 25% 25% 25%;
-        grid-template-rows: 25% 25% 25% 25%;
+    -ms-grid-rows: 24%;
+        grid-template-rows: 24%;
+    min-height: 0;
   }
 }
 
@@ -391,6 +391,12 @@ a {
       -ms-flex-direction: row;
           flex-direction: row;
   max-width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+  .portfolio__item {
+    height: 200px;
+  }
 }
 
 .portfolio__img-cont {
@@ -610,7 +616,8 @@ a {
 
 @media screen and (max-width: 520px) {
   .contactUs__form {
-    min-height: 150px;
+    min-height: 250px;
+    min-width: 180%;
   }
 }
 
@@ -622,12 +629,24 @@ a {
   color: #454545;
 }
 
+@media screen and (max-width: 520px) {
+  .name {
+    min-height: 40px;
+  }
+}
+
 .email {
   min-height: 10%;
   background-color: #303030;
   border: 1px solid #b4b4b4;
   font-size: 1.875rem;
   color: #454545;
+}
+
+@media screen and (max-width: 520px) {
+  .email {
+    min-height: 40px;
+  }
 }
 
 .message {
@@ -638,11 +657,23 @@ a {
   color: #454545;
 }
 
+@media screen and (max-width: 520px) {
+  .message {
+    min-height: 70px;
+  }
+}
+
 .submit {
   min-height: 10%;
   background-color: #b69b67;
   font-size: 1.875rem;
   color: #303030;
+}
+
+@media screen and (max-width: 520px) {
+  .submit {
+    min-height: 40px;
+  }
 }
 
 .contacts {
