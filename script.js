@@ -2,12 +2,16 @@
 let sound = new Audio();
 sound.src = 'music/hover__music.mp3';
 const title = document.querySelector('.header__h1');
-
-if (sound.onload) {
+const a = document.querySelector('.header__scroll')
+const p = new Promise(function (resolve, reject) {
     title.addEventListener('mouseover', function () {
         sound.play();
     });
-}
+    resolve();
+})
+
+
+
 
 //-----------portfolio-------
 let category = document.querySelector('.portfolio__select');
