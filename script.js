@@ -3,12 +3,23 @@ let sound = new Audio();
 sound.src = 'music/hover__music.mp3';
 const title = document.querySelector('.header__h1');
 const a = document.querySelector('.header__scroll')
+// const p = new Promise(function (resolve, reject) {
+//     title.addEventListener('mouseover', function () {
+//         sound.play();
+//     });
+//     resolve();
+// })
+
 const p = new Promise(function (resolve, reject) {
+    sound.onload;
+    resolve();
+});
+p.then(() => {
     title.addEventListener('mouseover', function () {
         sound.play();
     });
-    resolve();
-})
+});
+
 
 
 
